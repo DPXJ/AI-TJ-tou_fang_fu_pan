@@ -135,6 +135,11 @@
         .menu-item.has-children {
             position: relative;
         }
+        
+        .menu-item.has-children > .menu-icon,
+        .menu-item.has-children > .menu-text {
+            display: inline-block;
+        }
 
         .menu-item.has-children::after {
             content: '▶';
@@ -167,6 +172,10 @@
             padding: 0;
             opacity: 0;
             border-top: 1px solid rgba(37, 49, 89, 0.5);
+            width: 100%;
+            position: static;
+            display: block;
+            clear: both;
         }
 
         .submenu.expanded {
